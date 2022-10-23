@@ -49,6 +49,14 @@
     cursor: pointer;
     background-color: rgb(109, 40, 40);
 }
+
+#wrapperEmptyPhrase{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #listDeletedToDos{
     display: flex;
     flex-direction: column;

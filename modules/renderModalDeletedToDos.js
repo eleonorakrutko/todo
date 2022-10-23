@@ -1,3 +1,5 @@
+import renderEmptyPhrase from "./renderPhraseOfEmptyDeletedModal.js";
+
 function renderDeletedToDo(state){
     const modal = document.getElementById('modal');
     const listDeletedToDos = document.getElementById('listDeletedToDos');
@@ -5,6 +7,7 @@ function renderDeletedToDo(state){
     const clearButton = document.getElementById('clear')
 
     return function(){
+        renderEmptyPhrase(state)
         listDeletedToDos.innerHTML = null;
 
         closeButton.addEventListener('click', () =>{
@@ -30,7 +33,8 @@ function renderDeletedToDo(state){
         
         clearButton.addEventListener('click', () => {
             state.containerForDeletedToDos = [];
-            listDeletedToDos.innerHTML = null
+            listDeletedToDos.innerHTML = null;
+            renderEmptyPhrase(state);
         })
     }
 }
