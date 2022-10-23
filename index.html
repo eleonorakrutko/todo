@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="modal">
+        <div id="modalContent">
+            <button id="close">close</button>
+            <button id="clear">clear all</button>
+            <ul id="listDeletedToDos"></ul>
+        </div>
+    </div>
+
+    <div id="wrapperForm">
+        <input type="text" id="form" placeholder="enter your ToDo">
+        <button id="sendButton">add ToDo</button>
+    </div>
+    <button id="deletedTasksButton">show deleted tasks</button>
+    <div id="completedTasks"></div>
+    <ul id="listToDo"></ul>
+
+
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
